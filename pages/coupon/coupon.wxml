@@ -1,0 +1,73 @@
+<!--pages/coupon/coupon.wxml-->
+<view class="page">
+  <view class="tab-tle tac bb bg-white">
+    <text class="tab-tle__item pt-50 pb-40 {{ currentTab == 'ksy' ? 'active' : '' }}" data-current="ksy" bindtap="tabChange">可使用</text>
+    <text class="tab-tle__item pt-50 pb-40 {{ currentTab == 'ysy' ? 'active' : '' }}" data-current="ysy" bindtap="tabChange">已使用</text>
+    <text class="tab-tle__item pt-50 pb-40 {{ currentTab == 'ygq' ? 'active' : '' }}" data-current="ygq" bindtap="tabChange">已过期</text>
+  </view>
+
+  <view>
+    <view hidden="{{ currentTab == 'ksy' ? false : true }}">
+      <view class="coupon-list pt-40 plr-20">
+        <view class="coupon-item coupon-item--{{ item.ctype }} flex" wx:for="{{ couponList }}" wx:key="index">
+          <view class="coupon-item__num flex-v-c flex-h-c">
+            <view>
+              <text wx:if="{{ item.ctype == 'djq' }}">￥</text>
+              <text class="num">{{ item.num }}</text>
+              <text wx:if="{{ item.ctype == 'zkq' }}">折</text>
+            </view>
+          </view>
+          <view class="coupon-item__bd flex1">
+            <view><text class="fs-16">{{ item.name }}</text> <text class="coupon-item__status ml-10">{{ item.status }}</text></view>
+            <view class="coupon-item__txt mt-20 fs-12">{{ item.txt }}</view>
+            <view class="coupon-item__time fs-10 mt-10">{{ item.time }}</view>
+          </view>
+          <view class="coupon-item__btn flex-v-c">立即使用</view>
+        </view>
+      </view>
+    </view>
+    <!-- end 可使用 -->
+
+    <view hidden="{{ currentTab == 'ysy' ? false : true }}">
+      <view class="coupon-list pt-40 plr-20">
+        <view class="coupon-item coupon-item--{{ item.ctype }} flex" wx:for="{{ couponList2 }}" wx:key="index">
+          <view class="coupon-item__num flex-v-c flex-h-c">
+            <view>
+              <text wx:if="{{ item.ctype == 'djq' }}">￥</text>
+              <text class="num">{{ item.num }}</text>
+              <text wx:if="{{ item.ctype == 'zkq' }}">折</text>
+            </view>
+          </view>
+          <view class="coupon-item__bd flex1">
+            <view><text class="fs-16">{{ item.name }}</text> <text class="coupon-item__status ml-10">{{ item.status }}</text></view>
+            <view class="coupon-item__txt mt-20 fs-12">{{ item.txt }}</view>
+            <view class="coupon-item__time fs-10 mt-10">{{ item.time }}</view>
+          </view>
+          <view class="coupon-item__btn {{ item.status != '可使用' ? 'disabled' : '' }} flex-v-c">立即使用</view>
+        </view>
+      </view>
+    </view>
+    <!-- end 已使用 -->
+
+    <view hidden="{{ currentTab == 'ygq' ? false : true }}">
+      <view class="coupon-list pt-40 plr-20">
+        <view class="coupon-item coupon-item--disabled flex" wx:for="{{ couponList3 }}" wx:key="index">
+          <view class="coupon-item__num flex-v-c flex-h-c">
+            <view>
+              <text wx:if="{{ item.ctype == 'djq' }}">￥</text>
+              <text class="num">{{ item.num }}</text>
+              <text wx:if="{{ item.ctype == 'zkq' }}">折</text>
+            </view>
+          </view>
+          <view class="coupon-item__bd flex1">
+            <view class="coupon-item__bd-tle"><text class="fs-16">{{ item.name }}</text> <text class="coupon-item__status ml-10">{{ item.status }}</text></view>
+            <view class="coupon-item__txt mt-20 fs-12">{{ item.txt }}</view>
+            <view class="coupon-item__time fs-10 mt-10">{{ item.time }}</view>
+          </view>
+          <view class="coupon-item__btn {{ item.status != '可使用' ? 'disabled' : '' }} flex-v-c">立即使用</view>
+        </view>
+      </view>
+    </view>
+    <!-- end 已过期 -->
+  </view>
+</view>

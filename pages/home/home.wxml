@@ -1,0 +1,46 @@
+<!--pages/home/home.wxml-->
+<view class="page">
+  <view class="pt-35 pb-40 plr-20 flex-v-c bg-white">
+    <view class="user-avatar mr-40">
+      <image src="../../images/user.jpg" mode="aspectFit"></image>
+    </view>
+    <view class="flex1">
+      <view class="fs-16">宋宋……&&*&*</view>
+      <view class="mt-10 fs-12 color-gray-light">白金会员</view>
+    </view>
+  </view>
+
+  <view class="equal-txt pt-30 bt flex bg-white">
+    <view class="flex1 tac">
+      <view class="fs-18 fw-700">50</view>
+      <view class="fs-13">我的积分</view>
+    </view>
+
+    <view class="flex1 tac">
+      <view class="fs-18 fw-700">50</view>
+      <view class="fs-13">我的优惠券</view>
+    </view>
+  </view>
+
+  <view class="vip-card">
+    <view class="pt-35 pl-35 flex">
+      <icon class="icon-vip mr-20"></icon>
+      <view class="flex1 color-brown">
+        <view class="fs-15 fw-700">白金卡会员</view>
+        <view class="fs-12">五月花海鲜酒楼专享</view>
+      </view>
+    </view>
+
+    <view class="vip-card__num color-brown tac fs-24 mt-100 fw-200">4598 4669 2568 776</view>
+    
+    <view class="vip-card__date plr-20 tar color-brown fs-10">
+      会员有效期：2019年12月1日-2019年12月30日
+    </view>
+  </view>
+</view>
+
+<view class="fixed-bottom">
+  <view class="pd-50">
+    <view class="btn btn-primary btn-round btn-gradient btn-block">去付款</view>
+  </view>
+</view>

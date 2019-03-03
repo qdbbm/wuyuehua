@@ -1,0 +1,14 @@
+.label {
+  display: inline-block;
+  height: 42rpx;
+  line-height: 40rpx;
+  padding: 0 10rpx;
+  font-size: 24rpx;
+  border-radius: 6rpx;
+  border: 1px solid #e5e5e5;
+}
+
+.label-primary {
+  color: #ff7b04;
+  border-color: #ff7b04;
+}

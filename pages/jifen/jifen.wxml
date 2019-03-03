@@ -1,0 +1,51 @@
+<!--pages/jifen/jifen.wxml-->
+<view class="page">
+  <view class="jifen-hd pt-40 pb-80 tac">
+    <text class="jifen-hd__tle fs-12 color-primary">我的积分余额</text>
+    <view class="color-white mt-10">
+      <icon class="icon-jifen"></icon>
+      <text class="fs-42">1337</text>
+    </view>
+
+    <view class="btn btn-outline btn-outline-white btn-round btn-sm mt-10">去兑换优惠券</view>
+  </view>
+
+  <view class="tab-container plr-25">
+    <view class="bg-white br-10 plr-20">
+      <view class="tab-tle tac bb">
+        <text class="tab-tle__item pt-60 pb-40 {{ currentTab == 'sr' ? 'active' : '' }}" data-current="sr" bindtap="tabChange">收入</text>
+        <text class="tab-tle__item pt-60 pb-40 {{ currentTab == 'zc' ? 'active' : '' }}" data-current="zc" bindtap="tabChange">支出</text>
+      </view>
+
+      <view class="tab-content">
+        <view hidden="{{ currentTab == 'sr' ? false : true }}">
+          <view class="jf-detail-list">
+            <view class="flex-v-c ptb-30" wx:for="{{ jfList }}" wx:key="index">
+              <view class="flex1 ovh">
+                <view>{{ item.tle }}</view>
+                <view class="fs-12 color-gray-light mt-10">{{ item.time }}</view>
+              </view>
+
+              <view>+{{ item.num }}积分</view>
+            </view>
+          </view>
+        </view>
+        <!-- end 收入 -->
+
+        <view hidden="{{ currentTab == 'zc' ? false : true }}">
+          <view class="jf-detail-list">
+            <view class="flex-v-c ptb-30" wx:for="{{ jfList2 }}" wx:key="index">
+              <view class="flex1 ovh">
+                <view>{{ item.tle }}</view>
+                <view class="fs-12 color-gray-light mt-10">{{ item.time }}</view>
+              </view>
+
+              <view class="color-danger">-{{ item.num }}积分</view>
+            </view>
+          </view>
+        </view>
+        <!-- end 支出 -->
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,42 @@
+<!--pages/bind/bind.wxml-->
+<view class="page">
+  <view class="tac mt-40">
+    <image class="logo" src="../../images/logo.png"></image>
+  </view>
+
+  <view class="form-wrap bg-white mlr-25 plr-30 br-10 mt-20">
+    <view class="form-item ptb-30 flex-v-c">
+      <view class="pr-30 br">
+        <icon class="icon-card"></icon>
+      </view>
+      <view class="flex1">
+        <input class="plr-20" placeholder="如有白金会员卡,请输入卡号;如没有可不填写"></input>
+      </view>
+    </view>
+
+    <view class="form-item ptb-30 flex-v-c bt">
+      <view class="pr-30 br">
+        <icon class="icon-mobile"></icon>
+      </view>
+      <view class="flex1">
+        <input class="plr-20" placeholder="点击输入手机号"></input>
+      </view>
+      <view class="color-primary tdul">获取验证码</view>
+    </view>
+
+    <view class="form-item ptb-30 flex-v-c bt">
+      <view class="pr-30 br">
+        <icon class="icon-safe"></icon>
+      </view>
+      <view class="flex1">
+        <input class="plr-20" placeholder="点击输入验证码"></input>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="fixed-bottom">
+  <view class="pd-50">
+    <view class="btn btn-primary btn-round btn-gradient btn-block">确认绑定</view>
+  </view>
+</view>

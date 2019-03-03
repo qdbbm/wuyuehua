@@ -1,10 +1,38 @@
 /**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+@import 'common/helper';
+@import 'common/layout';
+@import 'common/icon';
+@import 'common/btn';
+@import 'common/label';
+
+page {
+  font-size: 28rpx;
+}
+
+.color-brown {
+  color: #a3834a !important;
+}
+
+.tab-container {
+  margin-top: -67rpx;
+}
+
+.tab-tle__item {
+  position: relative;
+  display: inline-block;
+  margin: 0 55rpx;
+}
+
+.tab-tle__item.active {
+  color: #ff5d16;
+}
+
+.tab-tle__item.active:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6rpx;
+  background: currentColor;
+  content: "";
+}
