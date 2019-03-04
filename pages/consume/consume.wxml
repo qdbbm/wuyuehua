@@ -16,7 +16,7 @@
     </view>
 
     <view class="bg-white br-10 mt-20 plr-20">
-      <view class="cell flex-v-c ptb-35">
+      <view class="cell flex-v-c ptb-35" bindtap="showCouponModal">
         <icon class="icon-coupon mr-20"></icon>
         优惠券
         <view class="flex1 tar pr-20">
@@ -38,6 +38,36 @@
 
 <view class="fixed-bottom">
   <view class="pd-50 plr-60">
-    <view class="btn btn-primary btn-round btn-gradient btn-block">还需支付￥20 立即支付</view>
+    <navigator url="../consumeSuccess/consumeSuccess" class="btn btn-primary btn-round btn-gradient btn-block">还需支付￥20 立即支付</navigator>
+  </view>
+</view>
+
+<view class="overlay" style="display: {{couponModalShow ? 'flex' : 'none'}};"></view>
+<view class="modal-wrap" style="display: {{couponModalShow ? 'flex' : 'none'}};">
+  <view class="modal">
+    <view class="ptb-40 plr-20">
+      <view class="fs-15">优惠券</view>
+      <view class="coupon-list mt-40">
+        <view class="coupon-item coupon-item--sm coupon-item--{{ item.ctype }} flex {{ currentIndex == index ? 'coupon-item--active' : '' }}" wx:for="{{ couponList }}" wx:key="index" bindtap="tapSelected" data-index="{{ index }}">
+          <view class="coupon-item__checked"></view>
+          <view class="coupon-item__num flex-v-c flex-h-c">
+            <view>
+              <text wx:if="{{ item.ctype == 'djq' }}">￥</text>
+              <text class="num">{{ item.num }}</text>
+              <text wx:if="{{ item.ctype == 'zkq' }}">折</text>
+            </view>
+          </view>
+          <view class="coupon-item__bd flex1">
+            <view><text class="fs-16">{{ item.name }}</text> <text class="coupon-item__status ml-10">{{ item.status }}</text></view>
+            <view class="coupon-item__txt mt-20 fs-12">{{ item.txt }}</view>
+            <view class="coupon-item__time fs-10 mt-10">{{ item.time }}</view>
+          </view>
+          <view class="coupon-item__btn flex-v-c">立即使用</view>
+        </view>
+      </view>
+    </view>
+    <view class="modal-close" bindtap="hideCouponModal">
+      <icon class="icon-close"></icon>
+    </view>
   </view>
 </view>

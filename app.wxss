@@ -4,6 +4,8 @@
 @import 'common/icon';
 @import 'common/btn';
 @import 'common/label';
+@import 'common/overlay';
+@import 'common/modal';
 
 page {
   font-size: 28rpx;

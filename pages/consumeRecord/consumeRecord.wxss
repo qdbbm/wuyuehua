@@ -39,3 +39,7 @@ page:after {
 .record-item:not(:first-child) {
   border-top: 1rpx dashed #e3e3e3;
 }
+
+.bl {
+  border-left: 1rpx solid #e5e5e5 !important;
+}

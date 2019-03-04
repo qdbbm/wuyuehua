@@ -22,6 +22,6 @@
   </view>
 
   <view class="tac mt-100">
-    <view class="btn btn-outline btn-outline-primary btn-round plr-100">查看消费记录</view>
+    <navigator url="../consumeRecord/consumeRecord" class="btn btn-outline btn-outline-primary btn-round plr-100">查看消费记录</navigator>
   </view>
 </view>

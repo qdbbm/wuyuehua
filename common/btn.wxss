@@ -37,14 +37,14 @@
 }
 
 .btn-sm {
-  height: 60rpx;
-  line-height: 60rpx;
+  height: 44rpx;
+  line-height: 44rpx;
   padding: 0 20rpx;
   font-size: 24rpx;
 }
 
 .btn-sm.btn-outline {
-  line-height: 58rpx;
+  line-height: 42rpx;
 }
 
 .btn-lg {
@@ -54,7 +54,6 @@
 }
 
 .btn-outline {
-  line-height: 88rpx;
   border: 1px solid #626262;
   background: none;
 }
@@ -91,4 +90,10 @@
   height: 100%;
   background: linear-gradient(transparent, rgba(0, 0, 0, .1));
   content: "";
+}
+
+.btn.disabled {
+  color: #fff !important;
+  background: #bfbfbf !important;
+  pointer-events: none;
 }

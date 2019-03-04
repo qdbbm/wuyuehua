@@ -1,4 +1,4 @@
-// pages/consume/consume.js
+// pages/couponGet/couponGet.js
 Page({
 
   /**
@@ -7,43 +7,22 @@ Page({
   data: {
     couponList: [
       {
-        num: 20,
+        type: 'djq',
         name: '代金券',
-        status: '可使用',
-        txt: '白金会员特享优惠',
         time: '2019.01.31-2019.03.31',
-        ctype: 'djq'
+        num: 10,
+        txt: '白金会员特享优惠',
+        status: 0  // 0 未领取  1 已领取
       },
       {
-        num: 9.5,
+        type: 'zkq',
         name: '折扣券',
-        status: '可使用',
-        txt: '白金会员特享优惠',
         time: '2019.01.31-2019.03.31',
-        ctype: 'zkq'
+        num: 9.5,
+        txt: '端午节特享优惠',
+        status: 1
       }
-    ],
-    currentIndex: 0,
-    couponModalShow: false
-  },
-
-  tapSelected: function (e) {
-    let index = e.currentTarget.dataset.index;
-    this.setData({
-      currentIndex: index
-    })
-  },
-
-  showCouponModal: function () {
-    this.setData({
-      couponModalShow: true
-    })
-  },
-
-  hideCouponModal: function () {
-    this.setData({
-      couponModalShow: false
-    })
+    ]
   },
 
   /**

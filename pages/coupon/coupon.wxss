@@ -16,6 +16,7 @@ page:after {
 }
 
 .coupon-item {
+  position: relative;
   border-radius: 15rpx;
 }
 
@@ -178,4 +179,30 @@ page:after {
 
 .coupon-item--disabled .coupon-item__bd-tle {
   color: #999;
+}
+
+.coupon-item--sm .coupon-item__num {
+  width: 160rpx;
+}
+
+.coupon-item--sm .coupon-item__num .num {
+  font-size: 70rpx;
+}
+
+.coupon-item__checked {
+  position: absolute;
+  top: 50%;
+  left: -70rpx;
+  width: 34rpx;
+  height: 34rpx;
+  background: #eee;
+  border-radius: 50%;
+  border: 1rpx solid #c1c1c1;
+  transform: translate(0, -50%);
+  box-sizing: border-box;
+}
+
+.coupon-item--active .coupon-item__checked {
+  background: #fff;
+  border: 9rpx solid #ff5d16;
 }

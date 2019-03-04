@@ -1,11 +1,45 @@
 // pages/bind/bind.js
+var interval = null; //倒计时函数
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    time: '获取验证码', //倒计时 
+    currentTime: 60,
+    disabled: false
+  },
 
+  /**
+   * 验证码倒计时
+   */
+  getCode: function (options) {
+    var that = this;
+    var currentTime = that.data.currentTime
+    interval = setInterval(function () {
+      currentTime--;
+      that.setData({
+        time: currentTime + '秒'
+      })
+      if (currentTime <= 0) {
+        clearInterval(interval)
+        that.setData({
+          time: '重新发送',
+          currentTime: 60,
+          disabled: false
+        })
+      }
+    }, 1000)
+  },
+
+  getVerificationCode() {
+    this.getCode();
+    var that = this
+    that.setData({
+      disabled: true
+    })
   },
 
   /**

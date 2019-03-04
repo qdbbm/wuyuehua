@@ -1,0 +1,29 @@
+<!--pages/couponGet/couponGet.wxml-->
+<view class="page">
+  <view class="coupon-list pd-30">
+    <view class="coupon-item coupon-item--{{ item.type }} flex bg-white" wx:for="{{ couponList }}" wx:key="index">
+      <view class="flex1 flex pd-25 pr-10 ovh">
+        <view class="coupon-item__type mr-25">
+          <text class="fs-15 fw-700 color-white toe">{{ item.name }}</text>
+        </view>
+        <view class="flex1 ovh">
+          <view>{{ item.name }}</view>
+          <view class="fs-9 color-gray-light mt-15">
+            可使用时间：{{ item.time }}
+          </view>
+          <view class="mt-30">
+            <text class="fs-16 fw-700 color-primary"><text wx:if="{{ item.type == 'djq'}}">￥</text>{{ item.num }}<text wx:if="{{ item.type == 'zkq'}}">折</text></text>
+            <text class="fs-12 ml-10 coupon-item__txt">{{ item.txt }}</text>
+          </view> 
+        </view>
+      </view>
+      <view class="flex-v-c coupon-item__opt">
+        <view class="plr-20 tac">
+          <view class="fs-13">正在疯抢</view>
+          <view class="btn btn-primary btn-sm btn-round mt-30" wx:if="{{ item.status == 0 }}">点击领取</view>
+          <view wx:else class="btn btn-primary btn-sm btn-round mt-30 disabled">已领取</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

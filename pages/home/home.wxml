@@ -11,15 +11,15 @@
   </view>
 
   <view class="equal-txt pt-30 bt flex bg-white">
-    <view class="flex1 tac">
+    <navigator hover-class="none" url="../jifen/jifen" class="flex1 tac">
       <view class="fs-18 fw-700">50</view>
       <view class="fs-13">我的积分</view>
-    </view>
+    </navigator>
 
-    <view class="flex1 tac">
+    <navigator hover-class="none" url="../coupon/coupon" class="flex1 tac">
       <view class="fs-18 fw-700">50</view>
       <view class="fs-13">我的优惠券</view>
-    </view>
+    </navigator>
   </view>
 
   <view class="vip-card">
@@ -41,6 +41,6 @@
 
 <view class="fixed-bottom">
   <view class="pd-50">
-    <view class="btn btn-primary btn-round btn-gradient btn-block">去付款</view>
+    <navigator url="../consume/consume" class="btn btn-primary btn-round btn-gradient btn-block">去付款</navigator>
   </view>
 </view>

@@ -8,7 +8,8 @@
     "pages/coupon/coupon",
     "pages/consume/consume",
     "pages/consumeSuccess/consumeSuccess",
-    "pages/consumeRecord/consumeRecord"
+    "pages/consumeRecord/consumeRecord",
+    "pages/couponGet/couponGet"
   ],
   "window": {
     "backgroundTextStyle": "light",

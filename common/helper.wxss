@@ -873,6 +873,10 @@
   font-size: 0 !important;
 }
 
+.fs-9 {
+  font-size: 18rpx !important;
+}
+
 .fs-10 {
   font-size: 20rpx !important;
 }
@@ -1176,4 +1180,9 @@
 
 .tp-half {
   padding-left: .5em;
+}
+
+.disabled {
+  color: #999 !important;
+  pointer-events: none;
 }
