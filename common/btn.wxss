@@ -54,13 +54,14 @@
 }
 
 .btn-outline {
+  line-height: 88rpx;
   border: 1px solid #626262;
   background: none;
 }
 
 .btn-outline-primary {
-  border-color: #1f6c6f;
-  color: #1f6c6f;
+  border-color: #ff7b04;
+  color: #ff7b04;
 }
 
 .btn-outline-white {

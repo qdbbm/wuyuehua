@@ -1168,3 +1168,12 @@
 .br-10 {
   border-radius: 10rpx;
 }
+
+/* 文字占位 */
+.tp {
+  padding-left: 1em;
+}
+
+.tp-half {
+  padding-left: .5em;
+}

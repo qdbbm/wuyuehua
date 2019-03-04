@@ -6,7 +6,9 @@
     "pages/home/home",
     "pages/jifen/jifen",
     "pages/coupon/coupon",
-    "pages/consume/consume"
+    "pages/consume/consume",
+    "pages/consumeSuccess/consumeSuccess",
+    "pages/consumeRecord/consumeRecord"
   ],
   "window": {
     "backgroundTextStyle": "light",

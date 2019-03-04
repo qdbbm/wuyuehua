@@ -1,0 +1,18 @@
+<!--pages/consumeRecord/consumeRecord.wxml-->
+<view class="page">
+  <view class="pd-25">
+    <view class="bg-white br-10 plr-20">
+      <view class="record-item ptb-50 flex" wx:for="{{ recordList }}" wx:key="index">
+        <view class="flex1 ovh">
+          <view class="toe">{{ item.tle }}</view>
+          <view class="fs-12 color-gray-light mt-20">{{ item.time }}</view>
+        </view>
+        <view class="bl pl-40">
+          <view class="flex-s-b"><text class="dib color-gray text-length mr-25 tar">总消费:</text><text class="tar">￥{{ item.total }}</text></view>
+          <view class="flex-s-b"><text class="dib color-gray text-length mr-25 tar">实际减免:</text><text class="tar">-{{ item.reduce }}</text></view>
+          <view class="flex-s-b"><text class="dib color-gray text-length mr-25 tar">实际支付:</text><text class="tar color-danger">￥{{ item.pay }}</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
