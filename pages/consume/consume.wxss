@@ -23,7 +23,7 @@ page {
 
 .consume-total__input input {
   width: 230rpx;
-  height: 70rpx;
+  height: 80rpx;
   text-align: left;
 }
 
@@ -41,4 +41,8 @@ page {
 
 .coupon-list {
   padding-left: 50rpx;
+  max-height: 708rpx;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }

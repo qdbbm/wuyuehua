@@ -2,7 +2,7 @@
 <view class="page">
   <view class="pd-25">
     <view class="bg-white br-10 plr-20">
-      <view class="record-item ptb-50 flex" wx:for="{{ recordList }}" wx:key="index">
+      <view class="record-item ptb-35 flex" wx:for="{{ recordList }}" wx:key="index">
         <view class="flex1 ovh">
           <view class="toe">{{ item.tle }}</view>
           <view class="fs-12 color-gray-light mt-20">{{ item.time }}</view>
