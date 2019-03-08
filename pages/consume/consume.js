@@ -40,7 +40,9 @@ Page({
       }
     ],
     currentIndex: 0,
-    couponModalShow: false
+    couponModalShow: false,
+    focus: true,
+    placeholder: '00.00'
   },
 
   tapSelected: function (e) {
@@ -66,7 +68,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
   },
 
   /**

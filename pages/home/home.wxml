@@ -8,6 +8,7 @@
       <view class="fs-16">宋宋……&&*&*</view>
       <view class="mt-10 fs-12 color-gray-light">白金会员</view>
     </view>
+    <view class="btn btn-primary btn-round btn-sm btn-gradient btn-order">我的订单</view>
   </view>
 
   <view class="equal-txt pt-30 bt flex bg-white">

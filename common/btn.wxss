@@ -37,8 +37,8 @@
 }
 
 .btn-sm {
-  height: 44rpx;
-  line-height: 44rpx;
+  height: 48rpx;
+  line-height: 48rpx;
   padding: 0 20rpx;
   font-size: 24rpx;
 }

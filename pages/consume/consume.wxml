@@ -10,7 +10,7 @@
       <view class="flex-h-c mt-40">
         <view class="consume-total__input flex-v-c">
           <text class="pt-10">￥</text>
-          <input type="number" placeholder="00.00" placeholder-class="placeholder"></input>
+          <input type="digit" focus="{{ focus }}" placeholder="{{ placeholder }}" placeholder-class="placeholder"></input>
         </view>
       </view>
     </view>
@@ -33,12 +33,10 @@
         </view>
       </view>
     </view>
-  </view>
-</view>
 
-<view class="fixed-bottom">
-  <view class="pd-50 plr-60">
-    <navigator url="../consumeSuccess/consumeSuccess" class="btn btn-primary btn-round btn-gradient btn-block">还需支付￥20 立即支付</navigator>
+    <view class="pd-50 plr-60">
+      <navigator url="../consumeSuccess/consumeSuccess" class="btn btn-primary btn-round btn-gradient btn-block">还需支付￥20 立即支付</navigator>
+    </view>
   </view>
 </view>
 

@@ -22,8 +22,9 @@ page {
 }
 
 .consume-total__input input {
-  width: 230rpx;
-  height: 80rpx;
+  width: 270rpx;
+  height: 90rpx;
+  line-height: 90rpx;
   text-align: left;
 }
 
