@@ -37,6 +37,6 @@
 
 <view class="fixed-bottom">
   <view class="pd-50">
-    <navigator url="../home/home" class="btn btn-primary btn-round btn-gradient btn-block">确认绑定</navigator>
+    <button class="btn btn-primary btn-round btn-gradient btn-block">确认绑定</button>
   </view>
 </view>

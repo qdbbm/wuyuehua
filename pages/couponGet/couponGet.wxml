@@ -3,17 +3,17 @@
   <view class="coupon-list pd-30">
     <view class="coupon-item coupon-item--{{ item.type }} flex bg-white" wx:for="{{ couponList }}" wx:key="index">
       <view class="flex1 flex pd-25 pr-10 ovh">
-        <view class="coupon-item__type mr-25">
+        <view class="coupon-item__type mr-25 flex-v-c flex-h-c">
           <text class="fs-15 fw-700 color-white toe">{{ item.name }}</text>
         </view>
         <view class="flex1 ovh">
           <view>{{ item.name }}</view>
-          <view class="fs-9 color-gray-light mt-15">
-            可使用时间：{{ item.time }}
+          <view class="fs-9 color-gray-light mt-10">
+            {{ item.time }}
           </view>
-          <view class="mt-30">
+          <view class="mt-10">
             <text class="fs-16 fw-700 color-primary"><text wx:if="{{ item.type == 'djq'}}">￥</text>{{ item.num }}<text wx:if="{{ item.type == 'zkq'}}">折</text></text>
-            <text class="fs-12 ml-10 coupon-item__txt">{{ item.txt }}</text>
+            <view class="fs-10 coupon-item__txt toe">{{ item.txt }}</view>
           </view> 
         </view>
       </view>

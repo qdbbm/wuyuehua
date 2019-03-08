@@ -13,7 +13,8 @@ page {
 }
 
 .coupon-item__type {
-  padding: 35rpx 15rpx;
+  width: 150rpx;
+  height: 150rpx;
   border: 1rpx solid #ccc;
   border-radius: 10rpx;
 }

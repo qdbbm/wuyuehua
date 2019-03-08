@@ -7,7 +7,7 @@
       <text class="fs-42">1337</text>
     </view>
 
-    <navigator url="../couponGet/couponGet" hover-class="none" class="btn btn-outline btn-outline-white btn-round btn-sm mt-10">去兑换优惠券</navigator>
+    <navigator url="../couponGet/couponGet" hover-class="none" class="btn btn-outline btn-outline-white btn-round btn-sm">去兑换优惠券</navigator>
   </view>
 
   <view class="tab-container plr-25">
