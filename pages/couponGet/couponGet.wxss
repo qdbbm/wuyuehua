@@ -53,15 +53,16 @@ page {
 
 .coupon-item__opt {
   position: relative;
-  border-left: 1rpx dashed #e2e2e2;
+  width: 170rpx;
+  border-left: 2rpx dashed #e2e2e2;
 }
 
 .coupon-item__opt:before,
 .coupon-item__opt:after {
   position: absolute;
-  left: -10rpx;
-  width: 20rpx;
-  height: 10rpx;
+  left: -5px;
+  width: 10px;
+  height: 5px;
   background: #f9f9f9;
   content: "";
 }
@@ -69,14 +70,14 @@ page {
 .coupon-item__opt:before {
   top: 0;
   border-top: 0;
-  border-bottom-right-radius: 20rpx;
-  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .coupon-item__opt:after {
   bottom: 0;
-  border-top-right-radius: 20rpx;
-  border-top-left-radius: 20rpx;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   border-bottom: 0;
 }
 

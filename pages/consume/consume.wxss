@@ -41,9 +41,14 @@ page {
 }
 
 .coupon-list {
-  padding-left: 50rpx;
-  max-height: 708rpx;
+  padding-left: 25px;
+  max-height: 354px;
   overflow: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+.coupon-item__btn:before,
+.coupon-item__btn:after {
+  background: #fff;
 }

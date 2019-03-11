@@ -7,7 +7,7 @@ Page({
   data: {
     couponList: [
       {
-        num: 20,
+        num: 900,
         name: '代金券',
         status: '可使用',
         txt: '白金会员特享优惠',

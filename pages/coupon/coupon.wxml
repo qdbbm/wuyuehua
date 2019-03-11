@@ -17,10 +17,11 @@
               <text wx:if="{{ item.ctype == 'zkq' }}">折</text>
             </view>
           </view>
-          <view class="coupon-item__bd flex1">
+          <view class="coupon-item__bd flex1 ovh">
             <view><text class="fs-16">{{ item.name }}</text> <text class="coupon-item__status ml-10">{{ item.status }}</text></view>
+            <view class="coupon-item__time fs-10 mt-10">可使用时间:{{ item.time }}</view>
             <view class="coupon-item__txt mt-20 fs-12">{{ item.txt }}</view>
-            <view class="coupon-item__time fs-10 mt-10">{{ item.time }}</view>
+            <view class="coupon-item__bd-circle"></view>
           </view>
           <view class="coupon-item__btn flex-v-c">立即使用</view>
         </view>
@@ -38,10 +39,11 @@
               <text wx:if="{{ item.ctype == 'zkq' }}">折</text>
             </view>
           </view>
-          <view class="coupon-item__bd flex1">
+          <view class="coupon-item__bd flex1 ovh">
             <view><text class="fs-16">{{ item.name }}</text> <text class="coupon-item__status ml-10">{{ item.status }}</text></view>
+            <view class="coupon-item__time fs-10 mt-10">可使用时间:{{ item.time }}</view>
             <view class="coupon-item__txt mt-20 fs-12">{{ item.txt }}</view>
-            <view class="coupon-item__time fs-10 mt-10">{{ item.time }}</view>
+            <view class="coupon-item__bd-circle"></view>
           </view>
           <view class="coupon-item__btn {{ item.status != '可使用' ? 'disabled' : '' }} flex-v-c">立即使用</view>
         </view>
@@ -59,10 +61,11 @@
               <text wx:if="{{ item.ctype == 'zkq' }}">折</text>
             </view>
           </view>
-          <view class="coupon-item__bd flex1">
+          <view class="coupon-item__bd flex1 ovh">
             <view class="coupon-item__bd-tle"><text class="fs-16">{{ item.name }}</text> <text class="coupon-item__status ml-10">{{ item.status }}</text></view>
+            <view class="coupon-item__time fs-10 mt-10">可使用时间:{{ item.time }}</view>
             <view class="coupon-item__txt mt-20 fs-12">{{ item.txt }}</view>
-            <view class="coupon-item__time fs-10 mt-10">{{ item.time }}</view>
+            <view class="coupon-item__bd-circle"></view>
           </view>
           <view class="coupon-item__btn {{ item.status != '可使用' ? 'disabled' : '' }} flex-v-c">立即使用</view>
         </view>
