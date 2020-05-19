@@ -22,10 +22,10 @@
       <view class="fs-13">我的优惠券</view>
     </navigator>
 
-    <view class="btn-bind">绑定会员卡</view>
+    <!-- <view class="btn-bind">绑定会员卡</view> -->
   </view>
 
-  <!-- <view class="vip-card">
+  <view class="vip-card">
     <view class="pt-35 pl-35 flex">
       <icon class="icon-vip mr-20"></icon>
       <view class="flex1 color-brown">
@@ -39,7 +39,7 @@
     <view class="vip-card__date plr-20 tar color-brown fs-10">
       会员有效期：2019年12月1日-2019年12月30日
     </view>
-  </view> -->
+  </view>
 </view>
 
 <view class="fixed-bottom">
